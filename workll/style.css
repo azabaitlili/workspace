@@ -1,0 +1,10 @@
+
+#ExAbout{
+    text-align: center;
+}
+.intro{
+     position: relative;
+     display: flex;
+     margin: auto;
+     width: 4px;
+}
