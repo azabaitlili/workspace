@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />  
     <title>Zombe</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -9,11 +10,17 @@
 </head>
 <body>
     <div class="container">
-    <nav>
-        <h1>Zombe</h1>
-        <a href="index.html"><img class="intro" src="image\badPixel.png"></a>
-    </nav>
-
+  <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+         <ul>
+            <li><a href="main.html">Start</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+         </ul>
+      </div>
         <div class="ExAbout">
             <h2>GameCobanos</h1>
             <p>World</p>
@@ -24,13 +31,12 @@
             <h2>FOTO</h2>
             <p>2134</p>
         </div>
-
     <footer>
         <a href="#">About</a>
         <br>
         <a href="#">Social</a>
 
-    </footer>
+    </footer>    
     </div>
 </body>
 </html>
