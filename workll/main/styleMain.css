@@ -1,6 +1,8 @@
 body{
   margin: 0%;
   height: 100%;
+  background-image: url(image/navBack.jpg);
+  background-size: cover;
 }
 .conteiner{
     display: grid;
@@ -12,115 +14,115 @@ body{
 nav{
   grid-column: 1/4;
   grid-row: 1/1;
-  background-image: url(image/navBack.jpg);
-  background-size:contain;
-  height: 150%;
+  background-color: #00000086;
+  height: 60%;
   margin: bottom 4px;;
+  border-radius: 2%;
 
 }
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    float: right;
 }
-.wrapper{
-  position: absolute;
-  top: 0%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(image/mblog.gif);
-  background-size: contain;
-  clip-path: circle(0px at calc(100% - 45px) 45px);
-  transition: all 0.3s ease-in-out;
-}
-#active:checked ~ .wrapper{
-  clip-path: circle(75%);
 
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: #00000079;
 }
-.menu-btn{
-  position: absolute;
-  z-index: 2;
-  right: 20px;
-  top: 6%;
-  height: 8%;
-  width: 5%;
-  max-width: 8%;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;  
-  transition: all 0.5s ease-in-out; 
-  background-image: url(image/logo.png);
-  background-size: cover;
-  background-color: #c4c0c07e;
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    float: right;
 }
-#active:checked ~ .menu-btn{
-  background-image: url(image/logo.png);
-  color: #00000000;
-  background-size: cover;
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-#active:checked ~ .menu-btn i:before{
-  content: "\f00d";
-  color: #00000000;
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
-.wrapper ul{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-}
-.wrapper ul li{
-  margin: 15px 0;
-}
-.wrapper ul li a{
-  color: none;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 5px 30px;
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#Name{
   color: #fff;
-  position: relative;
-  line-height: 50px;
-  transition: all 0.5s ease;
-}
-.wrapper ul li a:after{
-  position: absolute;
-  content: "";
-  background: #00000086;
-  width: 90%;
-  height: 50px;
-  left: 0;
-  border-radius: 50px;
-  transform: scaleY(0);
-  z-index: -1;
-  transition: transform 0.5s ease;
-}
-.wrapper ul li a:hover:after{
-  transform: scaleY(1);
-}
-.wrapper ul li a:hover{
-  color: #8a08e0;
-}
-input[type="checkbox"]{
-  display: none;
-}
-h1{
-  color: #fff;
-  margin: 0% auto;
   position: relative;
   text-align: center;
   top: 34%; 
+  width: auto;
 }
-.Content1{
+#Content1{
   grid-column:1/4;
   grid-row: 2/3;
   justify-items: center;
   margin-top: 10px;
+  color: #fff;
+}
+h2{
+  padding: 5px;
+}
+#Content1F{
+  width: 20%;
+  float: left;
+  padding: auto;
+  border: 10px;
+  margin: 0 20px 20px 0;  
+}
+.ContentZ{
+  padding: 20px;
+  border: #00000000;
+   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); 
+  background-color: #00000065;
+  height: 100%;
+  line-break: normal;
+  font-size: 23px;
+  padding: 10px;
+  justify-items: center;
+  border-radius: 2%;
+}
+button{
+ -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 30px;
+  border-radius: 21%;
+  background: #000000;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 25px;
+  margin-top: 20%;
+  margin-left: 10px;
+}
+button:hover {
+  background: #512080;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #76668fb0;
 }
 footer{
   grid-row: 3/4;
