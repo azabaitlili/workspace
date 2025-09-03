@@ -21,70 +21,6 @@ nav{
 
 }
 
-
-
-#Name{
-  color: #fff;
-  position: relative;
-  text-align: center;
-  top: 34%; 
-  width: auto;
-}
-#Content1{
-  grid-column:1/4;
-  grid-row: 2/3;
-  justify-items: center;
-  margin-top: 10px;
-  color: #fff;
-}
-h2{
-  padding: 5px;
-}
-#Content1F{
-  width: 20%;
-  float: left;
-  padding: auto;
-  border: 10px;
-  margin: 0 20px 20px 0;  
-}
-.ContentZ{
-  padding: 20px;
-  border: #00000000;
-   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px); 
-  background-color: #00000065;
-  height: 100%;
-  line-break: normal;
-  font-size: 23px;
-  padding: 10px;
-  justify-items: center;
-  border-radius: 2%;
-}
-button{
- -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 30px;
-  border-radius: 21%;
-  background: #000000;
-  color: #fff;
-  padding: 8px 16px;
-  font-size: 25px;
-  margin-top: 20%;
-  margin-left: 10px;
-}
-button:hover {
-  background: #512080;
-}
-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #76668fb0;
-}
-footer{
-  grid-row: 3/4;
-  grid-column: 1/4;
-}
-
 .wrapper{
   position: absolute;
   top: 0%;
@@ -171,3 +107,90 @@ footer{
 input[type="checkbox"]{
   display: none;
 }
+
+
+#Name{
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 34%; 
+  width: auto;
+}
+
+.ContentZ{
+  padding: 20px;
+  border: #00000000;
+   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); 
+  background-color: #00000065;
+  height: 100%;
+  line-break: normal;
+  font-size: 23px;
+  padding: 10px;
+  justify-items: center;
+  border-radius: 2%;
+  width: 60%;
+}
+
+#Content1{
+  grid-column:1/4;
+  grid-row: 2/3;
+  justify-items: center;
+  margin-top: 10px;
+  color: #fff;
+}
+h2{
+  padding: 5px;
+}
+
+#Content1F{
+  width: 20%;
+  float: left;
+  padding: auto;
+  border: 10px;
+  margin: 0 20px 20px 0;  
+}
+
+#Content2{
+  grid-column:1/4;
+  grid-row: 3/3;
+  justify-items: center;
+  margin-top: 40px;
+  color: #fff;
+}
+#Content2F{
+  width: 10%;
+  border: 20px;
+  margin: auto;
+}
+#Content2F1{
+  text-align: center;
+margin: auto;
+padding: auto;
+}
+
+button{
+ -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 30px;
+  border-radius: 21%;
+  background: #000000;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 25px;
+  margin-top: 20%;
+  margin-left: 10px;
+}
+button:hover {
+  background: #512080;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #76668fb0;
+}
+footer{
+  grid-row: 4/4;
+  grid-column: 1/4;
+}
+
