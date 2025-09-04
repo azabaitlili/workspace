@@ -161,14 +161,29 @@ h2{
 #Content2F{
   width: 10%;
   border: 20px;
-  margin: auto;
+  align-items: stretch;
+  display:flex;
+  float: right;
 }
 #Content2F1{
-  text-align: center;
-margin: auto;
-padding: auto;
+  
+  padding: auto;
+  
 }
-
+.ContentZ1{
+  padding: 20px;
+  border: #00000000;
+   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); 
+  background-color: #00000065;
+  height: 100%;
+  line-break: normal;
+  font-size: 23px;
+  padding: 10px;
+  justify-items: center;
+  border-radius: 2%;
+  width: 60%;
+}
 button{
  -webkit-appearance: none;
      -moz-appearance: none;
