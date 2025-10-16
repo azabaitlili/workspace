@@ -10,59 +10,87 @@
 </head>
 <body>
     <div class="conteiner">
-        
-            <nav>
-                <div id="Name">
-                    <h1>CabanosFamilyCo.</h1>
+        <nav>
+            <div id="Name">
+                <h1>CabanosFamilyCo.</h1>
+            </div>
+            <button class="custom-menu-btn" id="menuBtn" style="background-image: url(image/logo.png);"></button>
+            <div class="menu-background" id="menuBackground" style="background-image: url(image/mblog.gif);"></div>
+            <div class="fullscreen-menu" id="fullscreenMenu">
+                <ul class="menu-nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="Content1">
+            <div class="ContentZ">
+                <h2>What is it?</h2>
+                <div>
+                    <img id="Content1F" src="image/Contentv1.png">
                 </div>
-                <input type="checkbox" id="active">
-                <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-                <div class="wrapper"> 
-                    <ul> 
-                        <li><a href="login.html>">Login</a></li> 
-                        <li><a href="main.html">Start</a></li> 
-                        <li><a href="#">About</a></li> <li><a href="#">Team</a></li> 
-                    </ul> 
-                </div>
-            </nav>
-            <div id="Content1">
-                <div class="ContentZ">
-                    <h2>What is it?</h2>
-                    <div>
-                        <img id="Content1F" src="image/Contentv1.png">
-                    </div>
-                    <div class="text">
-                        <p>This page provides information about our family of Cabanos. <br>
+                <div class="text">
+                    <p>This page provides information about our family of Cabanos. <br>
                         Various projects, ways to contact us for suggestions and joining the family. <br>
                         We are ordinary hard workers and enthusiasts. music, games, fashion, and just our lives, that's what this website is about</p>
-                    </div>
-                    <div>
-                        <button href="#">Games</button>
-                        <button>Music</button>
-                        <button>Life Fam</button>
-                    </div>
+                </div>
+                <div>
+                    <button href="#">Games</button>
+                    <button>Music</button>
+                    <button>Life Fam</button>
                 </div>
             </div>
-            <div id="Content2">
-                <div class="ContentZ1">
-                    <h2>We have a fun</h2>
-                        <div  id="Content2F1">
-                            <img id="Content2F" src="image/Contentv1.png">
+        </div>
+        <div class="cards-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="image/wtfPixel.png" alt="РазработкаHt">
                         </div>
-                        <div id="Content2F1" >
-                            <img id="Content2F" src="image/Contentv1.png">
+                        <div class="card-back">
+                            <div class="card-back-content">
+                                <h3>Веб-разработка</h3>
+                                <p>Создание современных адаптивных веб-сайтов с использованием последних технологий. Полный цикл разработки от дизайна до запуска.</p>
+                            </div>
                         </div>
-                        <div id="Content2F1">
-                            <img id="Content2F" src="image/Contentv1.png">
-                        </div> 
+                    </div>
                 </div>
-            </div>
-            <footer>
-                <a href="#">About</a>
-                <br>
-                <a href="#">Social</a>
 
-            </footer>    
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="image/badPixel.png" alt="РазработкаMB">
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-content">
+                            <h3>Мобильные приложения</h3>
+                            <p>Разработка кроссплатформенных мобильных приложений для iOS и Android. Интуитивный интерфейс и высокая производительность.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="image/CRAFTpixl.png" alt="UI">
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-content">
+                                <h3>ГеймДев</h3>
+                                <p>Каждый раз пытаемся и будем пытаться сделать игру в которую сами хотим играть.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <footer>
+            <a href="#">About</a><br>
+            <a href="#">Social</a>
+        </footer>    
     </div>
 </body>
 </html>
