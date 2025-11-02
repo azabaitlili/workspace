@@ -128,27 +128,7 @@ nav{
   width: 100%;
   left: 0;
   }
-  /* Адаптивность */
-  @media (max-width: 768px) {
-  .custom-menu-btn {
-  width: 50px;
-  height: 50px;
-  top: 15px;
-  right: 15px;
-  }
-  .menu-nav a {
-  font-size: 1.5rem;
-  }
-  }
-  @media (max-width: 480px) {
-  .menu-nav a {
-  font-size: 1.3rem;
-  }        
-  .custom-menu-btn {
-  width: 45px;
-  height: 45px;
- }
-}
+ 
 
 #Name{
   color: #fff;
@@ -158,70 +138,89 @@ nav{
   width: auto;
 }
 
-.ContentZ{
-    padding: 20px;
-    border: #00000000;
-   backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px); 
-    background-color: #00000065;
-    height: 100%;
-    line-break: normal;
-   font-size: 23px;
-    padding: 10px;
-    justify-items: center;
-    border-radius: 2%;
-    width: 60%;
+/* Основн */
+.card-contain {
+  grid-column: 2/3 ;
+  grid-row: 2 / 3;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0 15px;
   }
- #Content1{
-    grid-column:1/4;
-    grid-row: 2/3;
-    justify-items: center;
-    margin-top: 10px;
-    color: #fff;
+  .cardd {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  color: #fff;
+  padding: 25px;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
   }
-  h2{
-    padding: 5px;
+  .card__title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 25px 0;
+  padding: 10px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   }
-  #Content1F{
-    width: 20%;
-    float: left;
-    padding: auto;
-    border: 10px;
-    margin: 0 20px 20px 0;  
+  .card__content-wrapper {
+  gap: 30px;
+  margin-bottom: 25px;
+  align-items: center;
   }
-  .ContentZ1{
-    padding: 20px;
-    border: #00000000;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px); 
-    background-color: #00000065;
-    height: 100%;
-    line-break: normal;
-    font-size: 23px;
-    padding: 10px;
-    justify-items: center;
-    border-radius: 2%;
-    width: 60%;
-}
-button{
- -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 30px;
-  border-radius: 21%;
+  /* Контейнер для изображения */
+  .card__image-container {
+  flex: 0 0 auto;
+  width: 250px;
+  margin-right: 3% ;
+  float: left;
+  }
+  .card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  }
+  /* Контейнер для текста */
+  .card__text-container {
+  flex: 1;
+  min-width: 0; }
+  .card__description {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.5;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  }
+  /* Кнопки */
+  .card__actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: auto; 
+  }
+  .button {
+  appearance: none;
+  border: none;
+  border-radius: 25px;
   background: #000000;
   color: #fff;
-  padding: 8px 16px;
-  font-size: 25px;
-  margin-top: 20%;
-  margin-left: 10px;
-}
-button:hover {
+  font-size: clamp(0.9rem, 1.8vw, 1.3rem);
+  padding: clamp(8px, 1.5vw, 12px) clamp(16px, 2.5vw, 24px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  }
+  .button:hover {
   background: #512080;
-}
-button:focus {
+  transform: translateY(-2px);
+  }
+  .button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #76668fb0;
+  box-shadow: 0 0 0 3px rgba(118, 102, 143, 0.7);
 }
 .cards-container {
   grid-row: 3/3;
@@ -282,8 +281,191 @@ button:focus {
   line-height: 1.5;
 }
 
-footer{
+.footer {
   grid-row: 4/4;
   grid-column: 1/4;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  margin-top: auto;
+  }
+
+  .footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  }
+  .footer__copyright p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+  .footer__links {
+  display: flex;
+  gap: 25px;
+  }
+  .footer__link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  transition: color 0.3s ease;
+  position: relative;
+  }
+  .footer__link:hover {
+  color: #fff;
+  }
+  .footer__link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+  }
+  .footer__link:hover::after {
+  width: 100%;
 }
-        
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  /*это тупо для footer*/
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer__links {
+    gap: 20px;
+  }
+    /*это тупо для контента с кнопками*/
+   .card-container {
+    padding: 0 10px;
+  }
+  .card {
+    padding: 20px 15px;
+  }
+  .card__content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .card__image-container {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .card__actions {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .button {
+    flex: 1;
+    min-width: 100px;
+  }
+  .card__description {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    line-height: 1.6;
+  }
+  /*это тупо для меню*/
+    .custom-menu-btn {
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  right: 15px;
+  }
+  .menu-nav a {
+  font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /*это тупо для footer*/
+  .footer {
+    padding: 15px 0;
+  }
+  
+  .footer__content {
+    padding: 0 15px;
+  }
+  
+  .footer__links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  /*это тупо для контент с кнопками*/
+.card {
+    padding: 15px 12px;
+  }
+  
+  .card__content-wrapper {
+    gap: 15px;
+  }
+  
+  .card__actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .button {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .card__description {
+    font-size: clamp(0.8rem, 3.5vw, 1rem);
+    line-height: 1.7;
+  }
+
+  /*это тупо для меню*/
+   .menu-nav a {
+  font-size: 1.3rem;
+  }        
+  .custom-menu-btn {
+  width: 45px;
+  height: 45px;
+ }
+
+}
+
+/* Планшеты */
+@media (max-width: 900px) {
+  .card {
+    padding: 20px;
+    max-width: 95%;
+  }
+  
+  .card__content-wrapper {
+    gap: 25px;
+  }
+  
+  .card__image-container {
+    width: 200px;
+  }
+}
+
+/* Большие экраны */
+@media (min-width: 1200px) {
+  .card {
+    max-width: 1000px;
+  }
+  
+  .card__image-container {
+    width: 300px;
+  }
+}
+
+/* Fallback для отключенного backdrop-filter */
+@supports not (backdrop-filter: blur(4px)) {
+  .card {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
