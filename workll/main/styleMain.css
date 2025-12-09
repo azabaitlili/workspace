@@ -3,6 +3,10 @@ body{
   height: 100%;
   background-image: url(image/navBack.jpg);
   background-size: cover;
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-color: #000;
 }
 .conteiner{
     display: grid;
@@ -15,7 +19,7 @@ nav{
   grid-column: 1/4;
   grid-row: 1/1;
   background-color: #00000086;
-  height: 60%;
+  height: 40%;
   margin: bottom 4px;;
   border-radius: 2%;
 
@@ -436,6 +440,13 @@ nav{
 
 }
 
+@media (max-width: 768px) {
+  body {
+    /* Можно загрузить другую, оптимизированную картинку для мобильных */
+    /* background-image: url('image/your-background-image-mobile.jpg'); */
+  }
+}
+
 /* Планшеты */
 @media (max-width: 900px) {
   .card {
@@ -452,6 +463,12 @@ nav{
   }
 }
 
+@media (max-width: 1024px) {
+  body {
+    background-attachment: scroll; /* фиксированный фон может тормозить на мобильных */
+  }
+}
+
 /* Большие экраны */
 @media (min-width: 1200px) {
   .card {
@@ -460,6 +477,12 @@ nav{
   
   .card__image-container {
     width: 300px;
+  }
+}
+
+@media (min-width: 2560px) {
+  body {
+    background-size: contain;
   }
 }
 
