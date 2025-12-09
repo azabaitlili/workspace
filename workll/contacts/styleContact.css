@@ -441,10 +441,9 @@ nav{
 }
 
 @media (max-width: 768px) {
-  body {
+  /*body {
     /* Можно загрузить другую, оптимизированную картинку для мобильных */
     /* background-image: url('image/your-background-image-mobile.jpg'); */
-  }
 }
 
 /* Планшеты */
